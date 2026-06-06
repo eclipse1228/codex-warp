@@ -1,0 +1,29 @@
+{
+  "name": "warp",
+  "version": "0.1.1",
+  "description": "Send Codex lifecycle events to a patched Warp tab through warp-agent-notify.",
+  "author": {
+    "name": "Local Warp OSS"
+  },
+  "license": "MIT",
+  "keywords": [
+    "warp",
+    "codex",
+    "notifications",
+    "hooks"
+  ],
+  "interface": {
+    "displayName": "Warp",
+    "shortDescription": "Show Codex progress in Warp tabs.",
+    "longDescription": "Reports Codex prompt, permission, tool, and stop lifecycle events to Warp OSS using the warp-agent-notify socket helper.",
+    "developerName": "Local Warp OSS",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive"
+    ],
+    "defaultPrompt": [
+      "Use Warp tab notifications for this Codex session."
+    ],
+    "brandColor": "#D6A72A"
+  }
+}
