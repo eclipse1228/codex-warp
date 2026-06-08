@@ -1,29 +1,37 @@
 {
   "name": "warp",
   "version": "0.1.1",
-  "description": "Send Codex lifecycle events to a patched Warp tab through warp-agent-notify.",
+  "description": "Forward Codex lifecycle events to Warp tab and system notifications.",
   "author": {
-    "name": "Local Warp OSS"
+    "name": "byeongsu",
+    "url": "https://github.com/eclipse1228"
   },
+  "homepage": "https://github.com/eclipse1228/codex-warp",
+  "repository": "https://github.com/eclipse1228/codex-warp",
   "license": "MIT",
   "keywords": [
     "warp",
     "codex",
     "notifications",
-    "hooks"
+    "tmux",
+    "ssh"
   ],
   "interface": {
     "displayName": "Warp",
-    "shortDescription": "Show Codex progress in Warp tabs.",
-    "longDescription": "Reports Codex prompt, permission, tool, and stop lifecycle events to Warp OSS using the warp-agent-notify socket helper.",
-    "developerName": "Local Warp OSS",
-    "category": "Productivity",
+    "shortDescription": "Show Codex running and completion status in Warp.",
+    "longDescription": "Forwards Codex SessionStart, UserPromptSubmit, PermissionRequest, PostToolUse, and Stop hooks to Warp's CLI agent notification pipeline so Warp can show tab badges, vertical tab status, and native notifications. Designed for patched Warp OSS builds with local, SSH, and tmux environments.",
+    "developerName": "byeongsu",
+    "category": "Developer Tools",
     "capabilities": [
-      "Interactive"
+      "Hooks",
+      "Notifications"
     ],
+    "websiteURL": "https://github.com/eclipse1228/codex-warp",
+    "privacyPolicyURL": "https://github.com/eclipse1228/codex-warp#privacy",
+    "termsOfServiceURL": "https://github.com/eclipse1228/codex-warp#terms",
     "defaultPrompt": [
-      "Use Warp tab notifications for this Codex session."
+      "Use Codex in Warp and notify me when done."
     ],
-    "brandColor": "#D6A72A"
+    "brandColor": "#10A37F"
   }
 }
